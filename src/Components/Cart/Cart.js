@@ -1,5 +1,8 @@
 import React, { } from 'react';
 import './Cart.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRightArrowLeft } from '@fortawesome/free-solid-svg-icons';
+
 const Cart = (props) => {
     const { cart } = props;
   
@@ -11,10 +14,12 @@ const Cart = (props) => {
 
     return (
         <div className='cart'>
-            <h4>Order Summary</h4>
+            <h4>Product Order Summary</h4>
             <p> {name} </p>
            
-            <button>Choose One for Me</button>
+            <button>Choose One for Me
+                <FontAwesomeIcon icon={faArrowRightArrowLeft}></FontAwesomeIcon>
+            </button>
             <button>Choose Again</button>
         </div>
     );
