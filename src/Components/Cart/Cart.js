@@ -3,9 +3,7 @@ import './Cart.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRightArrowLeft } from '@fortawesome/free-solid-svg-icons';
 
-const Cart = (props) => {
-    const { cart } = props;
-  
+const Cart = ({ cart }) => {  
     let name = [];
 
     for (const product of cart) {
